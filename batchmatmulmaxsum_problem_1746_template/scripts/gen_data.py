@@ -19,7 +19,7 @@ np.random.seed(42 + 0)
 os.makedirs("input/case0", exist_ok=True)
 x1 = np.random.uniform(low=-1.0, high=1.0, size=(1, 1, 32)).astype(np.float16)
 x1.tofile("input/case0/x1.bin")
-x2 = np.random.uniform(low=-1.0, high=1.0, size=(1, 32, 1)).astype(np.float16)
+x2 = np.random.uniform(low=-1.0, high=1.0, size=(1, 32, 8)).astype(np.float16)
 x2.tofile("input/case0/x2.bin")
 
 transposeX1 = False
